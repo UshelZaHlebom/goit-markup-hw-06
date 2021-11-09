@@ -839,20 +839,22 @@ padding-bottom: 0;
     width: 16px;
     height: 15px;
     margin-right: 6px;
-    border: 1px solid #303030;
+    border: 2px solid #303030;
     cursor: pointer;
     border-radius: 2px;
-    background-image: url('../images/checkbox.svg');
-    background-repeat: no-repeat;
-    background-position: center;
+
 }
 
 .modal-checkbox:checked + .checkbox-label::before {
+    background-image: url('../images/checkbox.svg');
     background-color: var(--major-color);
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 .modal-checkbox:focus + .checkbox-label::before {
-    outline: 1px solid var(--major-color);
+    border-color:var(--major-color);
 }
 
 .policy-click{
